@@ -26,7 +26,7 @@ class Pokemon
       WHERE id = ?
     SQL
 
-    db.execute(sql, id) 
+    result = db.execute(sql, id) 
   end 
 
   def self.find(id, db)
