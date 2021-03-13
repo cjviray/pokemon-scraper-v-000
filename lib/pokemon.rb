@@ -27,6 +27,7 @@ class Pokemon
     SQL
 
     result = db.execute(sql, id)[0]
+    Pokemon.new
   end 
 
   def self.find(id, db)
